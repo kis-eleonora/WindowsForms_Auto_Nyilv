@@ -43,6 +43,7 @@ namespace WindowsForms_Auto_Nyilv
             this.comboBox_Szin = new System.Windows.Forms.ComboBox();
             this.button_Mentes = new System.Windows.Forms.Button();
             this.checkBox_Muszaki = new System.Windows.Forms.CheckBox();
+            this.button_vosszatolt = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label_cim
@@ -166,7 +167,7 @@ namespace WindowsForms_Auto_Nyilv
             // 
             // button_Mentes
             // 
-            this.button_Mentes.Location = new System.Drawing.Point(139, 509);
+            this.button_Mentes.Location = new System.Drawing.Point(184, 509);
             this.button_Mentes.Name = "button_Mentes";
             this.button_Mentes.Size = new System.Drawing.Size(147, 51);
             this.button_Mentes.TabIndex = 15;
@@ -183,11 +184,22 @@ namespace WindowsForms_Auto_Nyilv
             this.checkBox_Muszaki.TabIndex = 16;
             this.checkBox_Muszaki.UseVisualStyleBackColor = true;
             // 
+            // button_vosszatolt
+            // 
+            this.button_vosszatolt.Location = new System.Drawing.Point(471, 509);
+            this.button_vosszatolt.Name = "button_vosszatolt";
+            this.button_vosszatolt.Size = new System.Drawing.Size(178, 51);
+            this.button_vosszatolt.TabIndex = 17;
+            this.button_vosszatolt.Text = "Visszatöltés";
+            this.button_vosszatolt.UseVisualStyleBackColor = true;
+            this.button_vosszatolt.Click += new System.EventHandler(this.button_vosszatolt_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 29F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1022, 617);
+            this.Controls.Add(this.button_vosszatolt);
             this.Controls.Add(this.checkBox_Muszaki);
             this.Controls.Add(this.button_Mentes);
             this.Controls.Add(this.comboBox_Szin);
@@ -228,6 +240,7 @@ namespace WindowsForms_Auto_Nyilv
         private System.Windows.Forms.ComboBox comboBox_Szin;
         private System.Windows.Forms.Button button_Mentes;
         private System.Windows.Forms.CheckBox checkBox_Muszaki;
+        private System.Windows.Forms.Button button_vosszatolt;
     }
 }
 
